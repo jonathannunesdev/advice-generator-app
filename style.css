@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-size: 28px;
+}
+
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color:hsl(218, 23%, 16%);
+}
+
+.container--box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 550px;
+    height: 350px;
+    border-radius: 15px;
+    padding: 40px;
+    background-color: hsl(217, 19%, 24%);
+    box-shadow: 5px 5px 60px  hsl(223, 24%, 11%);
+   
+}
+
+.advice--number{
+    margin-bottom: 15px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    
+}
+
+.advice{
+    text-align: center;
+    color: #fff;
+    text-transform:initial;
+  
+}
+
+.divider{
+    margin-top: 10px;
+}
+
+.dice{
+    position: absolute;
+    top: 57%;
+    left:calc(50% - 29px);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(150, 100%, 66%);
+    
+}
+.dice:hover{
+    background-color: hsla(150, 100%, 66%, 0.8);
+}
+.dice:active{
+    box-shadow: 5px 5px 60px  hsl(150, 100%, 66%);
+}
+
+footer{
+    color: #fff;
+    font-size: 16px;
+
+}
+@media (max-width: 675px){
+    .container--box{
+        width: 305px;
+        height: 280px;
+    }
+    .advice--number{
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .advice{
+        font-size: 18px;
+        padding: 10px;
+        max-height: none;
+    }
+
+    .divider{
+        margin-top: 2px;
+    }
+    .divider img{
+        max-width: 250px;
+    }
+    .dice{
+        top: 50%;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
